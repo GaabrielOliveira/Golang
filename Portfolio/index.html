@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Eletiva - GoLang</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Portifólio de Eletiva (GoLang)</h1>
+      <p>TADS 5 &bull; IFMS Três Lagoas</p>
+      <p class="subtitle">Gabriel Felipe Oliveira Freitas</p>
+    </header>
+
+    <div class="main-container" id="home">
+      <a href="#class-01" class="card">
+        <div>
+          <div class="card-date">29/08/2025</div>
+          <h3 class="card-title">Lista de 25 Exercícios</h3>
+          <p class="card-summary">
+            Entrega da lista de exercícios básicos em GoLang.
+          </p>
+        </div>
+        <span class="card-status status-aula">Aula Prática</span>
+      </a>
+
+      <a href="#class-02" class="card">
+        <div>
+          <div class="card-date">05/09/2025</div>
+          <h3 class="card-title">Testes de Benchmark</h3>
+          <p class="card-summary">
+            Relatório de performance de 5 algoritmos selecionados.
+          </p>
+        </div>
+        <span class="card-status status-aula">Aula Prática</span>
+      </a>
+
+      <a href="#class-03" class="card">
+        <div>
+          <div class="card-date">19/09/2025</div>
+          <h3 class="card-title">Semana da ADM</h3>
+          <p class="card-summary">Liberados para assistir o evento.</p>
+        </div>
+        <span class="card-status status-no-aula">Evento</span>
+      </a>
+
+      <a href="#class-04" class="card">
+        <div>
+          <div class="card-date">26/09/2025</div>
+          <h3 class="card-title">Verificação</h3>
+          <p class="card-summary">
+            Verificação de Portfólio pelo Professor Alex.
+          </p>
+        </div>
+        <span class="card-status status-aula">Avaliação</span>
+      </a>
+
+      <a href="#class-05" class="card">
+        <div>
+          <div class="card-date">03/10/2025</div>
+          <h3 class="card-title">Sem Aula</h3>
+          <p class="card-summary">Não houve atividade letiva nesta data.</p>
+        </div>
+        <span class="card-status status-no-aula">Sem Aula</span>
+      </a>
+
+      <a href="#class-06" class="card">
+        <div>
+          <div class="card-date">10/10/2025</div>
+          <h3 class="card-title">Acompanhamento</h3>
+          <p class="card-summary">Finalização dos exercícios pendentes.</p>
+        </div>
+        <span class="card-status status-aula">Prática</span>
+      </a>
+
+      <a href="#class-07" class="card">
+        <div>
+          <div class="card-date">17/10/2025</div>
+          <h3 class="card-title">Processamento PPM</h3>
+          <p class="card-summary">
+            Leitura e manipulação de arquivos de imagem .ppm.
+          </p>
+        </div>
+        <span class="card-status status-aula">Aula Prática</span>
+      </a>
+
+      <a href="#class-08" class="card">
+        <div>
+          <div class="card-date">24/10/2025</div>
+          <h3 class="card-title">Go by Example</h3>
+          <p class="card-summary">
+            Revisão completa de conceitos e estruturas de dados.
+          </p>
+        </div>
+        <span class="card-status status-aula">Revisão</span>
+      </a>
+
+      <a href="#class-09" class="card">
+        <div>
+          <div class="card-date">31/10/2025</div>
+          <h3 class="card-title">Recesso</h3>
+          <p class="card-summary">Sem aula.</p>
+        </div>
+        <span class="card-status status-recesso">Recesso</span>
+      </a>
+
+      <a href="#class-10" class="card">
+        <div>
+          <div class="card-date">07/11/2025</div>
+          <h3 class="card-title">Consciência Negra</h3>
+          <p class="card-summary">
+            Palestra alusiva à data. Chamada realizada.
+          </p>
+        </div>
+        <span class="card-status status-aula">Palestra</span>
+      </a>
+
+      <a href="#class-11" class="card">
+        <div>
+          <div class="card-date">14/11/2025</div>
+          <h3 class="card-title">Formatura TADS</h3>
+          <p class="card-summary">
+            Sem aula devido à formatura da turma TADS 5.
+          </p>
+        </div>
+        <span class="card-status status-no-aula">Evento</span>
+      </a>
+
+      <a href="#class-12" class="card">
+        <div>
+          <div class="card-date">21/11/2025</div>
+          <h3 class="card-title">Recesso</h3>
+          <p class="card-summary">Sem aula.</p>
+        </div>
+        <span class="card-status status-recesso">Recesso</span>
+      </a>
+    </div>
+
+    <div id="class-01" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <div class="page-header">
+          <h2>Lista de 25 Exercícios</h2>
+          <span>29/08/2025</span>
+        </div>
+        <div class="exercise-list">
+          <details>
+            <summary>Ex 01: Soma</summary>
+            <div class="exercise-content">
+              <pre><code>package main
+
+import "fmt"
+
+func Soma(a, b int) int {
+	return a + b
+}
+
+func main() {
+	var a, b int
+
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scan(&a)
+
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scan(&b)
+
+	soma := Soma(a, b)
+
+	fmt.Println("O resultado da soma é: ", soma)
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 02: Divisão</summary>
+            <div class="exercise-content">
+              <pre><code>// Arquivo: Ex2.go
+package main
+
+import "fmt"
+
+func Divisao(a, b int) int {
+	return a / b
+}
+
+func main() {
+	var a, b int
+
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scan(&a)
+
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scan(&b)
+
+	div := Divisao(a, b)
+
+	fmt.Println("O resultado da divisão é: ", div)
+}</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 03: Antecessor/Sucessor</summary>
+            <div class="exercise-content">
+              <pre><code>package main
+
+import "fmt"
+
+func main() {
+	var n int
+
+	fmt.Print("Digite um número: ")
+	fmt.Scanln(&n)
+
+	antecessor := n - 1
+	sucessor := n + 1
+
+	fmt.Println(n)
+	fmt.Printf("Antecessor: %d\n", antecessor)
+	fmt.Printf("Sucessor: %d\n", sucessor)
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 04: Verificação</summary>
+            <div class="exercise-content">
+              <pre><code>package main
+
+import "fmt"
+
+func VerificaNumero(num int) string {
+	if num == 0 {
+		return "O numero é zero (Nem positivo nem negativo)."
+	} else {
+		if num > 0 && num%2 == 0 {
+			return "O número é positivo e par"
+		} else if num > 0 && num%2 != 0 {
+			return "O número é positivo e impar"
+		} else if num < 0 && num%2 == 0 {
+			return "O número é negativo e par"
+		} else {
+			return "O número é negativo e impar"
+		}
+	}
+}
+
+func main() {
+	var num int
+	fmt.Print("Digite um número: ")
+	fmt.Scan(&num)
+	resultado := VerificaNumero(num)
+	fmt.Println(resultado)
+}</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 05: Primos</summary>
+            <div class="exercise-content">
+              <pre><code>package main
+                    
+                    import (
+                        "fmt"
+	"math"
+)
+
+func isPrime(n int) bool {
+	if n <= 1 {
+		return false
+	}
+	if n == 2 {
+		return true
+	}
+	if n%2 == 0 {
+		return false
+	}
+    
+	limit := int(math.Sqrt(float64(n)))
+	for i := 3; i <= limit; i += 2 {
+        if n%i == 0 {
+			return false
+		}
+	}
+	return true
+}
+
+func main() {
+    var num int
+
+	fmt.Print("Digite um número: ")
+	fmt.Scan(&num)
+    
+	if isPrime(num) {
+		fmt.Printf("%d é primo\n", num)
+	} else {
+		fmt.Printf("%d não é primo\n", num)
+	}
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 06</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func OrdenaNumeros(numeros []int) {
+	sort.Ints(numeros)
+}
+
+func main() {
+	var n int
+	fmt.Print("Digite a quantidade de números: ")
+	fmt.Scan(&n)
+
+	numeros := make([]int, n)
+
+	for i := 0; i < n; i++ {
+		fmt.Printf("Digite o %dº número: ", i+1)
+		fmt.Scan(&numeros[i])
+	}
+
+	OrdenaNumeros(numeros)
+
+	fmt.Println("Sequência ordenada:", numeros)
+}
+    
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 07</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func OrdenaString(texto string) string {
+	chars := []rune(texto)
+	sort.Slice(chars, func(i, j int) bool {
+		return chars[i] < chars[j]
+	})
+	return string(chars)
+}
+
+func main() {
+	var texto string
+	fmt.Print("Digite uma sequência de caracteres: ")
+	fmt.Scan(&texto)
+
+	textoOrdenado := OrdenaString(texto)
+
+	fmt.Println("Caracteres ordenados:", textoOrdenado)
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 08: Árvore de Decisão</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import (
+	"bufio"
+	"encoding/json"
+	"fmt"
+	"os"
+	"strings"
+)
+
+type Node struct {
+	Question string `json:"question,omitempty"`
+	Yes      *Node  `json:"yes,omitempty"`
+	No       *Node  `json:"no,omitempty"`
+	Action   string `json:"action,omitempty"`
+}
+
+func (n *Node) IsLeaf() bool {
+	return n != nil && n.Yes == nil && n.No == nil && n.Action != ""
+}
+
+func Evaluate(root *Node, answers []bool) *Node {
+	if root == nil {
+		return nil
+	}
+	cur := root
+	for _, ans := range answers {
+		if cur.IsLeaf() {
+			return cur
+		}
+		if ans {
+			cur = cur.Yes
+		} else {
+			cur = cur.No
+		}
+		if cur == nil {
+			return nil
+		}
+	}
+	return cur
+}
+
+func RunCLI(root *Node) {
+	if root == nil {
+		fmt.Println("Árvore vazia.")
+		return
+	}
+	reader := bufio.NewReader(os.Stdin)
+	cur := root
+	for {
+		if cur.IsLeaf() {
+			fmt.Printf("\nResultado encontrado: %s\n", cur.Action)
+			return
+		}
+		fmt.Printf("%s (y/n): ", cur.Question)
+		text, err := reader.ReadString('\n')
+		if err != nil {
+			fmt.Println("Erro de leitura:", err)
+			return
+		}
+		text = strings.TrimSpace(strings.ToLower(text))
+		if text == "y" || text == "s" {
+			if cur.Yes == nil {
+				fmt.Println("Caminho 'sim' não definido. Árvore incompleta.")
+				return
+			}
+			cur = cur.Yes
+			continue
+		}
+		if text == "n" {
+			if cur.No == nil {
+				fmt.Println("Caminho 'não' não definido. Árvore incompleta.")
+				return
+			}
+			cur = cur.No
+			continue
+		}
+		fmt.Println("Resposta inválida. Use 'y' (ou 's') para sim e 'n' para não.")
+	}
+}
+
+func BuildExampleTree() *Node {
+	// Folhas
+	dog := &Node{Action: "É um cachorro"}
+	cat := &Node{Action: "É um gato"}
+	bird := &Node{Action: "É um pássaro"}
+	fish := &Node{Action: "É um peixe"}
+
+	// Nós intermediários
+	flies := &Node{
+		Question: "O animal voa?",
+		Yes:      bird,
+		No:       nil,
+	}
+
+	livesInWater := &Node{
+		Question: "Vive na água?",
+		Yes:      fish,
+		No:       nil,
+	}
+
+	hasFur := &Node{
+		Question: "Tem pelos?",
+		Yes:      cat,
+		No:       dog,
+	}
+
+	// Ajuste dos nós para ter estrutura binária completa onde necessário
+	// Pergunta principal
+	root := &Node{
+		Question: "O animal tem quatro patas?",
+		Yes:      hasFur,
+		No: &Node{
+			Question: "Tem penas?",
+			Yes:      bird,
+			No:       livesInWater,
+		},
+	}
+
+	// Torna "voa" parte do ramo das penas (apenas para demonstrar)
+	root.No.Yes = bird
+	root.No.No = livesInWater
+
+	// Se você quiser que "voa" seja um nível acima:
+	_ = flies // mantém a variável caso extenda a árvore
+
+	return root
+}
+
+// Example of serializing and deserializing the tree to/from JSON.
+func exampleJSON(root *Node) {
+	b, err := json.Marsh
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 09: Ponteiros</summary>
+            <div class="exercise-content">
+              <pre><code>
+    
+package main
+
+import "fmt"
+
+func valorEndereco() {
+	x := 10
+	fmt.Println("Valor:", x, " | Endereço:", &x)
+}
+
+func main() {
+	valorEndereco()
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 10: Torre de Hanoi</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func hanoi(n int, origem, destino, auxiliar string) {
+	if n == 1 {
+		fmt.Printf("Mover disco de %s para %s\n", origem, destino)
+		return
+	}
+	hanoi(n-1, origem, auxiliar, destino)
+	fmt.Printf("Mover disco de %s para %s\n", origem, destino)
+	hanoi(n-1, auxiliar, destino, origem)
+}
+
+func main() {
+	hanoi(3, "A", "C", "B")
+}</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 11: Dia da Semana</summary>
+            <div class="exercise-content">
+              <pre><code>
+    package main
+import ("fmt"; "time")
+func diaSemana(ano, mes, dia int) string {
+    t := time.Date(ano, time.Month(mes), dia, 0, 0, 0, 0, time.UTC)
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func diaSemana(ano, mes, dia int) string {
+	t := time.Date(ano, time.Month(mes), dia, 0, 0, 0, 0, time.UTC)
+	return t.Weekday().String()
+}
+
+func main() {
+	fmt.Println("Dia da semana:", diaSemana(2004, 11, 18))
+}
+
+    return t.Weekday().String()
+}
+func main() { fmt.Println(diaSemana(2004, 11, 18)) }
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 12: Igualdade</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func main() {
+	var a, b int
+
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scan(&a)
+
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scan(&b)
+
+	igualdade := a == b
+
+	fmt.Print("Os vaores são iguais?\n", igualdade)
+}
+}</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 13: Moda</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func moda(nums []int) int {
+	freq := make(map[int]int)
+	maiorFreq, moda := 0, nums[0]
+	for _, n := range nums {
+		freq[n]++
+		if freq[n] > maiorFreq {
+			maiorFreq = freq[n]
+			moda = n
+		}
+	}
+	return moda
+}
+
+func main() {
+	fmt.Println("Moda:", moda([]int{1, 2, 2, 3, 3, 3, 4}))
+}
+
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 14: Palíndromo</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func ehPalindromo(s string) bool {
+	limpo := strings.ReplaceAll(strings.ToLower(s), " ", "")
+	i, j := 0, len(limpo)-1
+	for i < j {
+		if limpo[i] != limpo[j] {
+			return false
+		}
+		i++
+		j--
+	}
+	return true
+}
+
+func main() {
+	fmt.Println("É palíndromo?", ehPalindromo("A sacada da casa"))
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 15: Área Retângulo</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func areaRetangulo(base, altura float64) float64 {
+	return base * altura
+}
+
+func main() {
+	fmt.Println("Área:", areaRetangulo(5, 3))
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 16: Temperatura</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func celsiusParaFahrenheit(c float64) float64 {
+	return (c * 9 / 5) + 32
+}
+func fahrenheitParaCelsius(f float64) float64 {
+	return (f - 32) * 5 / 9
+}
+
+func main() {
+	fmt.Println("30°C =", celsiusParaFahrenheit(30), "°F")
+	fmt.Println("86°F =", fahrenheitParaCelsius(86), "°C")
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 17: Adivinhação</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func main() {
+	rand.Seed(time.Now().UnixNano())
+	segredo := rand.Intn(100) + 1
+	var palpite int
+	for {
+		fmt.Print("Digite um número entre 1 e 100: ")
+		fmt.Scan(&palpite)
+		if palpite < segredo {
+			fmt.Println("Maior!")
+		} else if palpite > segredo {
+			fmt.Println("Menor!")
+		} else {
+			fmt.Println("Acertou!")
+			break
+		}
+	}
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 18: Imagem JPEG</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import (
+	"image"
+	"image/color"
+	"image/jpeg"
+	"os"
+)
+
+func gerarImagemJPEG(r, g, b [][]uint8, nomeArquivo string) {
+	altura := len(r)
+	largura := len(r[0])
+	img := image.NewRGBA(image.Rect(0, 0, largura, altura))
+
+	for y := 0; y < altura; y++ {
+		for x := 0; x < largura; x++ {
+			cor := color.RGBA{r[y][x], g[y][x], b[y][x], 255}
+			img.Set(x, y, cor)
+		}
+	}
+	arquivo, _ := os.Create(nomeArquivo)
+	defer arquivo.Close()
+	jpeg.Encode(arquivo, img, nil)
+}
+
+func main() {
+	r := [][]uint8{{255, 0}, {0, 255}}
+	g := [][]uint8{{0, 255}, {0, 255}}
+	b := [][]uint8{{0, 0}, {255, 255}}
+
+	gerarImagemJPEG(r, g, b, "saida.jpg")
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 19: Vogais e Consoantes</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func contarVogaisConsoantes(texto string) (int, int) {
+	texto = strings.ToLower(texto)
+	vogais := "aeiou"
+	v, c := 0, 0
+	for _, ch := range texto {
+		if ch >= 'a' && ch <= 'z' {
+			if strings.ContainsRune(vogais, ch) {
+				v++
+			} else {
+				c++
+			}
+		}
+	}
+	return v, c
+}
+
+func main() {
+	v, c := contarVogaisConsoantes("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+	fmt.Println("Vogais:", v, "Consoantes:", c)
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 20: Ocorrência Palavra</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func contarOcorrencias(texto, palavra string) int {
+	texto = strings.ToLower(texto)
+	palavra = strings.ToLower(palavra)
+	return strings.Count(texto, palavra)
+}
+
+func main() {
+	fmt.Println("Ocorrências:", contarOcorrencias("O gato e o cachorro", "o"))
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 21: Fatorial</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func fatorial(n int) int {
+	if n <= 1 {
+		return 1
+	}
+	return n * fatorial(n-1)
+}
+
+func main() {
+	fmt.Println("Fatorial(5):", fatorial(5))
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 22: Hello World</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Print("Hello world!")
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 23: IMC</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func calcularIMC(peso, altura float64) float64 {
+	return peso / (altura * altura)
+}
+
+func main() {
+	fmt.Println("IMC:", calcularIMC(83, 1.78))
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 24: MMC</summary>
+            <div class="exercise-content">
+              <pre><code>
+package main
+
+import "fmt"
+
+func mdc(a, b int) int {
+	for b != 0 {
+		a, b = b, a%b
+	}
+	return a
+}
+func mmc(a, b int) int {
+	return (a * b) / mdc(a, b)
+}
+
+func main() {
+	fmt.Println("MMC de 12 e 18:", mmc(12, 18))
+}
+</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Ex 25: Média Variádica</summary>
+            <div class="exercise-content">
+              <pre><code>
+    package main
+
+import "fmt"
+
+func media(nums ...float64) float64 {
+	soma := 0.0
+	for _, n := range nums {
+		soma += n
+	}
+	return soma / float64(len(nums))
+}
+
+func main() {
+	fmt.Println("Média:", media(10, 20, 30))
+}
+
+</code></pre>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <div id="class-02" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <div class="page-header">
+          <h2>Relatório de Benchmark</h2>
+          <span>05/09/2025</span>
+        </div>
+
+        <p>
+          Exercícios e códigos de seus Benchmark's com <code>testing.B</code>.
+        </p>
+        <br />
+        <div class="exercise-list">
+          <details open>
+            <summary>Benchmark Soma (Ex1)</summary>
+            <div class="exercise-content">
+              <p>Ex1</p>
+              <pre><code>
+package main
+
+import "fmt"
+
+func Soma(a, b int) int {
+    return a + b
+}
+
+func main() {
+    var a, b int
+
+    fmt.Print("Digite o primeiro número: ")
+    fmt.Scan(&a)
+
+    fmt.Print("Digite o segundo número: ")
+    fmt.Scan(&b)
+
+    soma := Soma(a, b)
+
+    fmt.Println("O resultado da soma é: ", soma)
+}
+                        </code></pre>
+              <br />
+              <p>Benchmark</p>
+              <pre><code>
+    package main
+
+    import "testing"
+
+    func BenchmarkSoma(b *testing.B) {
+        for i := 0; i < b.N; i++ {
+            Soma(10, 20)
+        }
+    }
+                        </code></pre>
+              <br />
+            </div>
+          </details>
+
+          <details>
+            <summary>Benchmark divisão (Ex2)</summary>
+            <div class="exercise-content">
+              <p>Ex2</p>
+              <pre><code>
+package main
+
+import "fmt"
+
+func Divisao(a, b int) int {
+	return a / b
+}
+
+func main() {
+	var a, b int
+
+	fmt.Print("Digite o primeiro número: ")
+	fmt.Scan(&a)
+
+	fmt.Print("Digite o segundo número: ")
+	fmt.Scan(&b)
+
+	div := Divisao(a, b)
+
+	fmt.Println("O resultado da divisão é: ", div)
+}
+                        </code></pre>
+              <br />
+              <p>Benchmark</p>
+              <pre><code>
+package main
+
+import "testing"
+
+func BenchmarkDivisao(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Divisao(100, 5)
+	}
+}
+                        </code></pre>
+              <br />
+            </div>
+          </details>
+
+          <details>
+            <summary>Benchmark Positivo/negativo (Ex4)</summary>
+            <div class="exercise-content">
+              <p>Ex4</p>
+              <pre><code>
+package main
+
+import "fmt"
+
+func VerificaNumero(num int) string {
+	if num == 0 {
+		return "O numero é zero (Nem positivo nem negativo)."
+	} else {
+		if num > 0 && num%2 == 0 {
+			return "O número é positivo e par"
+		} else if num > 0 && num%2 != 0 {
+			return "O número é positivo e impar"
+		} else if num < 0 && num%2 == 0 {
+			return "O número é negativo e par"
+		} else {
+			return "O número é negativo e impar"
+		}
+	}
+}
+
+func main() {
+	var num int
+	fmt.Print("Digite um número: ")
+	fmt.Scan(&num)
+	resultado := VerificaNumero(num)
+	fmt.Println(resultado)
+}
+                        </code></pre>
+              <br />
+              <p>Benchmark</p>
+              <pre><code>
+package main
+
+import "testing"
+
+func BenchmarkVerificaNumero(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		VerificaNumero(-42)
+	}
+}
+                        </code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Benchmark ordenar numeros (Ex6)</summary>
+            <div class="exercise-content">
+              <p>Ex6</p>
+              <pre><code>
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func OrdenaNumeros(numeros []int) {
+	sort.Ints(numeros)
+}
+
+func main() {
+	var n int
+	fmt.Print("Digite a quantidade de números: ")
+	fmt.Scan(&n)
+
+	numeros := make([]int, n)
+
+	for i := 0; i < n; i++ {
+		fmt.Printf("Digite o %dº número: ", i+1)
+		fmt.Scan(&numeros[i])
+	}
+
+	OrdenaNumeros(numeros)
+
+	fmt.Println("Sequência ordenada:", numeros)
+}
+                        </code></pre>
+              <br />
+              <p>Benchmark</p>
+              <pre><code>
+package main
+
+import (
+	"math/rand"
+	"testing"
+)
+
+func BenchmarkOrdenaNumeros(b *testing.B) {
+	numerosParaOrdenar := make([]int, 1000)
+	for i := 0; i < len(numerosParaOrdenar); i++ {
+		numerosParaOrdenar[i] = rand.Intn(10000)
+	}
+
+	b.ResetTimer()
+
+	for i := 0; i < b.N; i++ {
+        b.StopTimer()
+		copia := make([]int, len(numerosParaOrdenar))
+		copy(copia, numerosParaOrdenar)
+		b.StartTimer()
+
+		OrdenaNumeros(copia)
+	}
+}
+                        </code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>Benchmark ordenar strings (Ex7)</summary>
+            <div class="exercise-content">
+              <p>Ex7</p>
+              <pre><code>
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func OrdenaString(texto string) string {
+	chars := []rune(texto)
+	sort.Slice(chars, func(i, j int) bool {
+		return chars[i] < chars[j]
+	})
+	return string(chars)
+}
+
+func main() {
+	var texto string
+	fmt.Print("Digite uma sequência de caracteres: ")
+	fmt.Scan(&texto)
+
+	textoOrdenado := OrdenaString(texto)
+
+	fmt.Println("Caracteres ordenados:", textoOrdenado)
+}
+                        </code></pre>
+              <br />
+              <p>Benchmark</p>
+              <pre><code>
+package main
+
+import "testing"
+
+func BenchmarkOrdenaString(b *testing.B) {
+	texto := "umasequenciadecaracteresparaserordenada"
+	b.ResetTimer()
+
+	for i := 0; i < b.N; i++ {
+		OrdenaString(texto)
+	}
+}
+                        </code></pre>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <div id="class-03" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <h2>Semana da ADM</h2>
+        <p>Sem aula técnica.</p>
+      </div>
+    </div>
+    <div id="class-04" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <h2>Verificação de Portfólio</h2>
+        <p>Feedback individual do professor.</p>
+      </div>
+    </div>
+    <div id="class-05" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <h2>Sem Aula</h2>
+      </div>
+    </div>
+    <div id="class-06" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <h2>Finalização de Exercícios</h2>
+        <p>Tempo dedicado para completar a lista inicial.</p>
+      </div>
+    </div>
+    <div id="class-09" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <h2>Recesso</h2>
+      </div>
+    </div>
+    <div id="class-10" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <h2>Consciência Negra</h2>
+        <p>Palestra e debate.</p>
+      </div>
+    </div>
+    <div id="class-11" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <h2>Formatura TADS</h2>
+      </div>
+    </div>
+    <div id="class-12" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <h2>Recesso Final</h2>
+      </div>
+    </div>
+
+    <div id="class-07" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <div class="page-header">
+          <h2>Processamento PPM</h2>
+          <span>17/10/2025</span>
+        </div>
+        <h3>Código Fonte: ppm.go</h3>
+        <br />
+        <pre><code>
+package main
+
+import (
+	"fmt"
+	"log"
+	"os"
+	"strconv"
+	"strings"
+)
+
+func main() {
+	inputFile := "imagem.txt"
+	outputFile := "imagem.ppm"
+
+	content, err := os.ReadFile(inputFile)
+	if err != nil {
+		log.Fatalf("Erro ao ler o arquivo de entrada: %v", err)
+	}
+
+	lines := strings.Split(string(content), "\n")
+
+	dims := strings.Fields(lines[1])
+	width, err := strconv.Atoi(dims[0])
+	if err != nil {
+		log.Fatalf("Erro ao converter largura: %v", err)
+	}
+	height, err := strconv.Atoi(dims[1])
+	if err != nil {
+		log.Fatalf("Erro ao converter altura: %v", err)
+	}
+
+	file, err := os.Create(outputFile)
+	if err != nil {
+		log.Fatalf("Erro ao criar o arquivo de saída: %v", err)
+	}
+	defer file.Close()
+
+	fmt.Fprintf(file, "P3\n%d %d\n255\n", width, height)
+
+	for i := 2; i < len(lines); i++ {
+		fields := strings.Fields(lines[i])
+		if len(fields) == 3 {
+			r := fields[0]
+			g := fields[1]
+			b := fields[2]
+			fmt.Fprintf(file, "%s %s %s\n", r, g, b)
+		}
+	}
+
+	fmt.Printf("Arquivo %s gerado com sucesso para %s\n", outputFile, inputFile)
+}
+            </code></pre>
+      </div>
+    </div>
+
+    <div id="class-08" class="page-overlay">
+      <div class="page-content">
+        <a href="#home" class="back-btn">← Voltar</a>
+        <div class="page-header">
+          <h2>Go by Example: Revisão</h2>
+          <span>24/10/2025</span>
+        </div>
+
+        <div class="exercise-list">
+          <details>
+            <summary>01. Hello World</summary>
+            <div class="exercise-content">
+              <pre><code>fmt.Println("Hello World!")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>02. Values</summary>
+            <div class="exercise-content">
+              <pre><code>fmt.Println("go" + "lang")
+fmt.Println("1+1 =", 1+1)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>03. Variables</summary>
+            <div class="exercise-content">
+              <pre><code>var a = "initial"
+f := "short"</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>04. Constants</summary>
+            <div class="exercise-content">
+              <pre><code>const s string = "constant"</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>05. For</summary>
+            <div class="exercise-content">
+              <pre><code>for i := 0; i < 3; i++ { ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>06. If/Else</summary>
+            <div class="exercise-content">
+              <pre><code>if 7%2 == 0 { ... } else { ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>07. Switch</summary>
+            <div class="exercise-content">
+              <pre><code>switch i { case 1: ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>08. Arrays</summary>
+            <div class="exercise-content">
+              <pre><code>var a [5]int</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>09. Slices</summary>
+            <div class="exercise-content">
+              <pre><code>s := make([]string, 3)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>10. Maps</summary>
+            <div class="exercise-content">
+              <pre><code>m := make(map[string]int)</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>11. Functions</summary>
+            <div class="exercise-content">
+              <pre><code>func plus(a, b int) int { return a + b }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>12. Multiple Return</summary>
+            <div class="exercise-content">
+              <pre><code>func vals() (int, int) { return 3, 7 }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>13. Variadic Functions</summary>
+            <div class="exercise-content">
+              <pre><code>func sum(nums ...int) { ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>14. Closures</summary>
+            <div class="exercise-content">
+              <pre><code>func intSeq() func() int { ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>15. Recursion</summary>
+            <div class="exercise-content">
+              <pre><code>func fact(n int) int { ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>16. Range</summary>
+            <div class="exercise-content">
+              <pre><code>for i, num := range nums { ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>17. Pointers</summary>
+            <div class="exercise-content">
+              <pre><code>func zeroptr(iptr *int) { *iptr = 0 }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>18. Strings & Runes</summary>
+            <div class="exercise-content">
+              <pre><code>utf8.RuneCountInString(s)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>19. Structs</summary>
+            <div class="exercise-content">
+              <pre><code>type person struct { name string; age int }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>20. Methods</summary>
+            <div class="exercise-content">
+              <pre><code>func (r *rect) area() int { ... }</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>21. Interfaces</summary>
+            <div class="exercise-content">
+              <pre><code>type geometry interface { area() float64 }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>22. Enums</summary>
+            <div class="exercise-content">
+              <pre><code>const ( StateIdle = iota; StateConnected )</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>23. Struct Embedding</summary>
+            <div class="exercise-content">
+              <pre><code>type container struct { base; str string }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>24. Generics</summary>
+            <div class="exercise-content">
+              <pre><code>func MapKeys[K comparable, V any](m map[K]V) []K</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>25. Range Iterators</summary>
+            <div class="exercise-content">
+              <pre><code>func (lst *List[T]) All() iter.Seq[T]</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>26. Errors</summary>
+            <div class="exercise-content">
+              <pre><code>return -1, errors.New("error")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>27. Custom Errors</summary>
+            <div class="exercise-content">
+              <pre><code>type argError struct { ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>28. Goroutines</summary>
+            <div class="exercise-content">
+              <pre><code>go f("goroutine")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>29. Channels</summary>
+            <div class="exercise-content">
+              <pre><code>messages := make(chan string)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>31. Channel Sync</summary>
+            <div class="exercise-content">
+              <pre><code>done <- true</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>32. Channel Directions</summary>
+            <div class="exercise-content">
+              <pre><code>func ping(pings chan<- string, msg string)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>33. Select</summary>
+            <div class="exercise-content">
+              <pre><code>select { case msg1 := <-c1: ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>34. Timeouts</summary>
+            <div class="exercise-content">
+              <pre><code>case <-time.After(1 * time.Second):</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>35. Non-Blocking Ops</summary>
+            <div class="exercise-content">
+              <pre><code>select { case msg := <-messages: ... default: ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>36. Closing Channels</summary>
+            <div class="exercise-content">
+              <pre><code>close(jobs)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>37. Range over Channels</summary>
+            <div class="exercise-content">
+              <pre><code>for elem := range queue</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>38. Timers</summary>
+            <div class="exercise-content">
+              <pre><code>timer1 := time.NewTimer(2 * time.Second)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>39. Tickers</summary>
+            <div class="exercise-content">
+              <pre><code>ticker := time.NewTicker(500 * time.Millisecond)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>40. Worker Pools</summary>
+            <div class="exercise-content">
+              <pre><code>go worker(w, jobs, results)</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>41. WaitGroups</summary>
+            <div class="exercise-content">
+              <pre><code>var wg sync.WaitGroup; wg.Wait()</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>42. Rate Limiting</summary>
+            <div class="exercise-content">
+              <pre><code>limiter := time.Tick(200 * time.Millisecond)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>43. Atomic Counters</summary>
+            <div class="exercise-content">
+              <pre><code>var ops atomic.Uint64; ops.Add(1)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>44. Mutexes</summary>
+            <div class="exercise-content">
+              <pre><code>mu.Lock(); defer mu.Unlock()</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>45. Stateful Goroutines</summary>
+            <div class="exercise-content">
+              <pre><code>case read := <-reads: ...</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>46. Sorting</summary>
+            <div class="exercise-content">
+              <pre><code>slices.Sort(strs)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>47. Sort by Functions</summary>
+            <div class="exercise-content">
+              <pre><code>slices.SortFunc(people, func...)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>48. Panic</summary>
+            <div class="exercise-content">
+              <pre><code>panic("a problem")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>49. Defer</summary>
+            <div class="exercise-content">
+              <pre><code>defer f.Close()</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>50. Recover</summary>
+            <div class="exercise-content">
+              <pre><code>if r := recover(); r != nil { ... }</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>61. Number Parsing</summary>
+            <div class="exercise-content">
+              <pre><code>strconv.ParseFloat("1.234", 64)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>62. URL Parsing</summary>
+            <div class="exercise-content">
+              <pre><code>url.Parse(s)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>63. SHA256 Hashes</summary>
+            <div class="exercise-content">
+              <pre><code>sha256.New()</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>64. Base64 Encoding</summary>
+            <div class="exercise-content">
+              <pre><code>b64.StdEncoding.EncodeToString([]byte(data))</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>65. Reading Files</summary>
+            <div class="exercise-content">
+              <pre><code>os.ReadFile("/tmp/dat")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>66. Writing Files</summary>
+            <div class="exercise-content">
+              <pre><code>os.WriteFile("/tmp/dat1", d1, 0644)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>67. Line Filters</summary>
+            <div class="exercise-content">
+              <pre><code>scanner := bufio.NewScanner(os.Stdin)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>68. File Paths</summary>
+            <div class="exercise-content">
+              <pre><code>filepath.Join("dir1", "dir2")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>69. Directories</summary>
+            <div class="exercise-content">
+              <pre><code>os.Mkdir("subdir", 0755)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>70. Temp Files</summary>
+            <div class="exercise-content">
+              <pre><code>os.CreateTemp("", "sample")</code></pre>
+            </div>
+          </details>
+
+          <details>
+            <summary>71. Embed Directives</summary>
+            <div class="exercise-content">
+              <pre><code>//go:embed folder/file.txt</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>72. Testing</summary>
+            <div class="exercise-content">
+              <pre><code>func TestIntMin(t *testing.T) { ... }</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>73. Command-Line Args</summary>
+            <div class="exercise-content">
+              <pre><code>os.Args</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>74. Flags</summary>
+            <div class="exercise-content">
+              <pre><code>flag.String("word", "foo", "a string")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>75. Subcommands</summary>
+            <div class="exercise-content">
+              <pre><code>fooCmd := flag.NewFlagSet("foo", flag.ExitOnError)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>76. Env Variables</summary>
+            <div class="exercise-content">
+              <pre><code>os.Getenv("FOO")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>77. Logging</summary>
+            <div class="exercise-content">
+              <pre><code>log.Println("standard logger")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>78. HTTP Client</summary>
+            <div class="exercise-content">
+              <pre><code>http.Get("https://gobyexample.com")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>79. HTTP Server</summary>
+            <div class="exercise-content">
+              <pre><code>http.HandleFunc("/hello", hello)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>80. Context</summary>
+            <div class="exercise-content">
+              <pre><code>ctx := req.Context()</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>81. Spawning Processes</summary>
+            <div class="exercise-content">
+              <pre><code>exec.Command("date")</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>82. Exec'ing Processes</summary>
+            <div class="exercise-content">
+              <pre><code>syscall.Exec(binary, args, env)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>83. Signals</summary>
+            <div class="exercise-content">
+              <pre><code>signal.Notify(sigs, syscall.SIGINT)</code></pre>
+            </div>
+          </details>
+          <details>
+            <summary>84. Exit</summary>
+            <div class="exercise-content">
+              <pre><code>os.Exit(3)</code></pre>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
