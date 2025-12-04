@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -11,10 +11,21 @@
     />
   </head>
   <body>
+    <!-- Outputs within the <pre class="code-output"> elements are placeholders and can be auto-updated
+       by running the included `generate_outputs.ps1` script in this folder. This script will run
+       Go programs and tests/benchmarks and inject real outputs into the placeholders below. -->
     <header>
-      <h1>Portifólio de Tópicos especiais em ligaugem de programação (Eletiva/Golang)</h1>
-      <p>TADS 5 &bull; IFMS Três Lagoas</p>
-      <p class="subtitle">Gabriel Felipe Oliveira Freitas</p>
+      <div class="header-row">
+        <div class="profile-container">
+          <!-- Replace 'profile.jpg' with your image file name (in project root) -->
+          <img id="profile-photo" src="Screenshot_20250202-234030-415.png" alt="Foto de Gabriel Felipe Oliveira" />
+        </div>
+        <div class="header-text">
+          <h1>Portifólio de Tópicos especiais em ligaugem de programação (Eletiva/Golang)</h1>
+          <p>TADS 5 &bull; IFMS Três Lagoas</p>
+          <p class="subtitle"><a href="https://github.com/GaabrielOliveira" target="_blank" rel="noopener noreferrer">Gabriel Felipe Oliveira Freitas</a></p>
+        </div>
+      </div>
     </header>
 
     <div class="main-container" id="home">
@@ -172,9 +183,11 @@ func main() {
 	soma := Soma(a, b)
 
 	fmt.Println("O resultado da soma é: ", soma)
-}
-</code></pre>
+    }
+                        </code></pre>
+              <!-- bench placeholder removed (not relevant here) -->
             </div>
+            <pre class="code-output" id="output-ex01">O resultado da soma é:  30</pre>
           </details>
 
           <details>
@@ -203,6 +216,7 @@ func main() {
 	fmt.Println("O resultado da divisão é: ", div)
 }</code></pre>
             </div>
+            <pre class="code-output" id="output-ex02">O resultado da divisão é:  4</pre>
           </details>
 
           <details>
@@ -224,9 +238,15 @@ func main() {
 	fmt.Println(n)
 	fmt.Printf("Antecessor: %d\n", antecessor)
 	fmt.Printf("Sucessor: %d\n", sucessor)
-}
-</code></pre>
+    }
+                        </code></pre>
+              <pre class="code-output" id="bench-ex06">Exemplo (valores de referência):
+BenchmarkOrdenaNumeros-8    50000    1205 ns/op    224 B/op    3 allocs/op
+(Execute `generate_outputs.ps1` para inserir resultados reais da sua máquina)</pre>
             </div>
+            <pre class="code-output" id="output-ex03">15
+Antecessor: 14
+Sucessor: 16</pre>
           </details>
 
           <details>
@@ -260,6 +280,7 @@ func main() {
 	fmt.Println(resultado)
 }</code></pre>
             </div>
+            <pre class="code-output" id="output-ex04">O número é positivo e par</pre>
           </details>
 
           <details>
@@ -303,9 +324,13 @@ func main() {
 	} else {
 		fmt.Printf("%d não é primo\n", num)
 	}
-}
-</code></pre>
+    }
+                        </code></pre>
+              <pre class="code-output" id="bench-ex07">Exemplo (valores de referência):
+BenchmarkOrdenaString-8    100000    120 ns/op    48 B/op    2 allocs/op
+(Execute `generate_outputs.ps1` para inserir resultados reais da sua máquina)</pre>
             </div>
+            <pre class="code-output" id="output-ex05">17 é primo</pre>
           </details>
 
           <details>
@@ -340,8 +365,13 @@ func main() {
 	fmt.Println("Sequência ordenada:", numeros)
 }
     
-</code></pre>
+                </code></pre>
+              <br />
+              <pre class="code-output" id="bench-ex04">Exemplo (valores de referência):
+BenchmarkVerificaNumero-8    80000000    18 ns/op    0 B/op    0 allocs/op
+(Execute `generate_outputs.ps1` para inserir resultados reais da sua máquina)</pre>
             </div>
+            <pre class="code-output" id="output-ex06">Sequência ordenada: [1 2 3 4 5]</pre>
           </details>
 
           <details>
@@ -374,6 +404,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex07">Caracteres ordenados: abc</pre>
           </details>
 
           <details>
@@ -514,6 +545,7 @@ func exampleJSON(root *Node) {
 	b, err := json.Marsh
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex08">Resultado encontrado: É um gato</pre>
           </details>
 
           <details>
@@ -535,6 +567,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex09">Valor: 10  | Endereço: 0xc000012030 (endereço variável)</pre>
           </details>
 
           <details>
@@ -559,6 +592,13 @@ func main() {
 	hanoi(3, "A", "C", "B")
 }</code></pre>
             </div>
+            <pre class="code-output" id="output-ex10">Mover disco de A para C
+Mover disco de A para B
+Mover disco de C para B
+Mover disco de A para C
+Mover disco de B para A
+Mover disco de B para C
+Mover disco de A para C</pre>
           </details>
 
           <details>
@@ -590,6 +630,7 @@ func main() {
 func main() { fmt.Println(diaSemana(2004, 11, 18)) }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex11">Dia da semana: Thursday</pre>
           </details>
 
           <details>
@@ -615,6 +656,8 @@ func main() {
 }
 }</code></pre>
             </div>
+            <pre class="code-output" id="output-ex12">Os vaores são iguais?
+true</pre>
           </details>
 
           <details>
@@ -644,6 +687,7 @@ func main() {
 
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex13">Moda: 3</pre>
           </details>
 
           <details>
@@ -675,6 +719,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex14">É palíndromo? true</pre>
           </details>
 
           <details>
@@ -694,6 +739,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex15">Área: 15</pre>
           </details>
 
           <details>
@@ -717,6 +763,8 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex16">30°C = 86 °F
+86°F = 30 °C</pre>
           </details>
 
           <details>
@@ -750,6 +798,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex17">Saída (exemplo): Maior!  (resultado depende do valor aleatório gerado em tempo de execução)</pre>
           </details>
 
           <details>
@@ -790,6 +839,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex18">Arquivo saida.jpg gerado com sucesso para imagem.txt</pre>
           </details>
 
           <details>
@@ -825,6 +875,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex19">Vogais: 5 Consoantes: 21</pre>
           </details>
 
           <details>
@@ -849,6 +900,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex20">Ocorrências: 5</pre>
           </details>
 
           <details>
@@ -871,6 +923,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex21">Fatorial(5): 120</pre>
           </details>
 
           <details>
@@ -886,6 +939,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex22">Hello world!</pre>
           </details>
 
           <details>
@@ -905,6 +959,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex23">IMC: 26.196264</pre>
           </details>
 
           <details>
@@ -930,6 +985,7 @@ func main() {
 }
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex24">MMC de 12 e 18: 36</pre>
           </details>
 
           <details>
@@ -954,6 +1010,7 @@ func main() {
 
 </code></pre>
             </div>
+            <pre class="code-output" id="output-ex25">Média: 20</pre>
           </details>
         </div>
       </div>
@@ -997,9 +1054,12 @@ func main() {
     soma := Soma(a, b)
 
     fmt.Println("O resultado da soma é: ", soma)
-}
-                        </code></pre>
-              <br />
+  }
+            </code></pre>
+        <br />
+        <pre class="code-output" id="bench-ex02">Exemplo (valores de referência):
+      BenchmarkDivisao-8    12000000    125 ns/op    0 B/op 0 allocs/op
+      (Execute `generate_outputs.ps1` para inserir resultados reais da sua máquina)</pre>
               <p>Benchmark</p>
               <pre><code>
     package main
@@ -1011,8 +1071,11 @@ func main() {
             Soma(10, 20)
         }
     }
-                        </code></pre>
-              <br />
+              </code></pre>
+          <br />
+              <pre class="code-output" id="bench-ex01">Exemplo (valores de referência):
+BenchmarkSoma-8        20000000    60 ns/op    0 B/op 0 allocs/op
+(Execute `generate_outputs.ps1` para inserir resultados reais da sua máquina)</pre>
             </div>
           </details>
 
